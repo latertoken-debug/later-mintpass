@@ -38,6 +38,8 @@ pub mod later_mintpass {
 
         require!(config.minted_count < config.max_supply, MintPassError::SupplyExhausted);
 
+        config.minted_count += 1;
+
         CreateV2CpiBuilder::new(&ctx.accounts.mpl_core_program)
             .asset(&ctx.accounts.asset)
             .collection(Some(&ctx.accounts.collection))
@@ -53,8 +55,6 @@ pub mod later_mintpass {
                 authority: Some(PluginAuthority::UpdateAuthority),
             }])
             .invoke()?;
-
-        config.minted_count += 1;
 
         Ok(())
     }
