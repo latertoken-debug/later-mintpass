@@ -4,7 +4,7 @@ use mpl_core::{
     types::{Plugin, PluginAuthority, PluginAuthorityPair},
 };
 
-declare_id!("11111111111111111111111111111111111111111");
+declare_id!("HRdDYh5NMCpnWMMFFjKP1AmnHErnnH5sDipksSwf5s6U");
 
 const MAX_SUPPLY: u64 = 200;
 
