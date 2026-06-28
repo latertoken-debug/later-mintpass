@@ -46,7 +46,6 @@ pub mod later_mintpass {
             .authority(Some(&ctx.accounts.authority))
             .payer(&ctx.accounts.authority)
             .owner(Some(&ctx.accounts.recipient))
-            .update_authority(Some(&ctx.accounts.authority))
             .system_program(&ctx.accounts.system_program)
             .name(name)
             .uri(uri)

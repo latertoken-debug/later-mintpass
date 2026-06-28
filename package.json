@@ -1,0 +1,18 @@
+{
+  "name": "later-mintpass-client",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "deploy:mpl-core:localnet": "bash scripts/deploy-mpl-core-localnet.sh",
+    "run:localnet": "ts-node scripts/run-localnet.ts"
+  },
+  "dependencies": {
+    "@coral-xyz/anchor": "^0.30.1",
+    "@solana/web3.js": "^1.95.3"
+  },
+  "devDependencies": {
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.4",
+    "@types/node": "^20.14.0"
+  }
+}
